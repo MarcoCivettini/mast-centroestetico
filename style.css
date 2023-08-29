@@ -11,17 +11,54 @@ font-family: "Times New Roman", Times, serif !important;
 color: #212529;
 }
 
+/* HEADER */
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    z-index: 6;
+    justify-content: end;
+    padding: 1rem 2rem;
+    color: white;
+    gap: 3rem;
+    background: linear-gradient(0deg, rgb(0 0 0 / 11%) 0%, rgb(25 25 25) 100%);
+}
+.header.high-contrast{
+    background: white;
+    color: black;
+    box-shadow: 0 -5px 21px #bbb;
+    transition: 0.2s;
+}
+
+.header>.item{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+
 .section1{
     display: flex;
-    height: 70vh;
-    background-color: var(--background-secondary);
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
 }
 
-.section-child{
-    width: 50%;
+.section1>.background{
+    background-image: url("./assets/img/wall-creeper.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+    filter: contrast(0.8) brightness(0.6) opacity(0.9) blur(0.1px);
+    width: 100%;
     height: 100%;
+
 }
+
 .base-btn{
     background-color: var(--primary-text-color);
     border: 0;
@@ -33,43 +70,34 @@ color: #212529;
     letter-spacing: .2rem;
 }
 
-.contact-btn{
-    
-}
-.girl-image{
-    /* background-image: url("./assets/img/screen.png"); */
-    background-image: url("./assets/img/wall-creeper.jpg");
-
-    background-size: contain;
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-    height: 100%;
-}
 
 .type{
     margin-bottom: 1.6rem;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
 }
 
 .title{
-    font-size: 4.5rem;
+    font-size: 7.5rem;
     font-weight: 800;
     margin-bottom: 0;
 }
 
 .title-descrition{
     padding: 0 2rem;
+    position: absolute;
+    color: white;
     align-self: center ;
-    height: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
 .title-descrition h2, .title-descrition h1{
     /* font-weight: 100; */
     letter-spacing: .3rem;
-}
-
-.title-descrition>.type{
-    color: #3f4144;
 }
 
 .title-descrition>.slogan{
@@ -78,11 +106,56 @@ color: #212529;
     margin-bottom: 3rem;
 }
 
+
+/* SCROLL INFO */
+.scroll-info{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+}
+
+.scroll-info>.shape-border{
+    width: 30px;
+    height: 75px;
+    border: 2px solid white;
+    border-radius: 14px;
+    position: relative;
+}
+
+@keyframes test {
+    0% {top: 0%;}
+    50% {top: calc(100% - (20px + 5px));}
+    100% {top: 0%;}
+}
+.scroll-info>.shape-border>.dot{
+    width: 20px;
+    border-radius: 36px;
+    height: 20px;
+    margin-left: 3px;
+    margin-top: 3px;
+    background-color: white;
+    animation-name: test;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;  
+    position: absolute;
+}
+
+
+
+
+.page-content{
+    position: absolute;
+    width: 100%;
+    background: white;
+    top: 100vh;
+    box-shadow: 0px -2px 13px #222;
+    padding: 4rem 0;
+
+}
+
+ /*Section2*/
+
 .section2{
-    margin-top: -3rem;
-    /* background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(223,236,219,1) 10%); */
-    /* background-color: #f3f2f6; */
 }
 
 .grid-content{
@@ -174,26 +247,12 @@ color: #212529;
         /* flex-direction: column-reverse; */
         flex-direction: column;
         height: auto;
-        margin-bottom: 2rem;
     }
     .section1>.section-child{
         width: 100%;
     }
 
-    .section1 .image-header{
-        position: relative;
-        height: 10vh;
-    }
-    .section1 .girl-image{
-        transform: rotate(270deg);
-        position: absolute;
-        left: -212px;
-        height: 203px;
-        top: -62px;
-        bottom: 0;
-        right: 0;
 
-    }
 
     .title-descrition{
         padding: 40px 30px;
