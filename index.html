@@ -5,21 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Mast - Centro Estetico</title>
+    <meta name=author content="Marco Civettini">
+    <meta name=description content="Centro estetico per il benessere della persona">
+
 </head>
 
 <body>
     <div class="header" id="header">
-        <div class="item">Chi siamo</div>
-        <div class="item">Trattamenti</div>
-        <div class="item">Shop</div>
-        <div class="item">Contattaci</div>
+        <div class="logo"></div>
+        <div class="menu-links">
+            <!-- <div class="item">Chi siamo</div> -->
+            <div class="item">Trattamenti</div>
+            <!-- <div class="item">Shop</div> -->
+            <div class="item">Contattaci</div>
+        </div>
     </div>
 
     <div class="section1">
@@ -37,41 +47,9 @@
         </div>
     </div>
 
-    <div class="page-content">
-        <div class="section2">
-            <div class="grid-content">
-                <div class="box text">
-                    <h3 class="box-title">A Unique Place</h3>
-                    <span>
-                        Integer diam quam, ultrices non lobortis ut, ultricies at libero phasellus luctus
-                    </span>
-                </div>
-                <div class="box image"></div>
-                <div class="box text">
-                    <h3 class="box-title">A Unique Place</h3>
-                    <span>
-                        Integer diam quam, ultrices non lobortis ut, ultricies at libero phasellus luctus
-                    </span>
-                </div>
-                <div class="box image"></div>
-                <div class="box image"></div>
-                <div class="box text">
-                    <h3 class="box-title">A Unique Place</h3>
-                    <span>
-                        Integer diam quam, ultrices non lobortis ut, ultricies at libero phasellus luctus
-                    </span>
-                </div>
-                <div class="box image"></div>
-                <div class="box text">
-                    <h3 class="box-title">A Unique Place</h3>
-                    <span>
-                        Integer diam quam, ultrices non lobortis ut, ultricies at libero phasellus luctus
-                    </span>
-                </div>
-            </div>
-        </div>
+    <div class="page-content container-fluid">
 
-        <div class="section3">
+        <div class="section summary-section relax-section">
             <div class="row">
                 <div class="col-lg-6 col-md-7 col-sm-12">
                     <div class="square-container">
@@ -82,17 +60,175 @@
                 </div>
                 <div class="col-lg-6 col-md-5 col-sm-12">
                     <div class="text-container">
-                        <h2>Massaggi</h2>
+                        <h2 class="section-title">BENESSERE</h2>
                         <p>
-                            Our highly qualified therapists will carry out an in depth analysis of your skins needs and
-                            create the best programme of treatment for you.
+                            Scopri il piacere dei massaggi rilassanti e dei trattamenti di estetica di base,
+                            accompagnati da prodotti di alta qualità. Benvenuti nel nostro santuario del benessere, dove
+                            la bellezza e il relax si uniscono in armonia.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="section summary-section product-section">
+            <div class="row">
+                <div class="col-lg-6 col-md-7 col-sm-12">
+                    <div class="square-container">
+                        <div class="square"></div>
+                        <div class="border-square"></div>
+                        <div class="image-square"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5 col-sm-12">
+                    <div class="text-container">
+                        <h2 class="section-title">PRODOTTI</h2>
+                        <p>
+                            Impieghiamo esclusivamente prodotti naturali di alta qualità per garantire trattamenti
+                            estetici che nutrono la pelle e stimolano il benessere interno, per risultati visibili e
+                            duraturi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section trattaments-preview-section">
+            <div class="grid-content">
+                <div class="box text">
+                    <h3 class="box-title">Massaggi</h3>
+                    <span>
+                        Massaggi rigeneranti per rilassare mente e corpo, un'oasi di benessere.
+                    </span>
+                </div>
+                <div class="box image massaggio"></div>
+                <div class="box text">
+                    <h3 class="box-title">Manicure</h3>
+                    <span>
+                        Manicure impeccabile per un tocco di eleganza e cura personale.
+                    </span>
+                </div>
+                <div class="box image manicure"></div>
+                <div class="box image pedicure"></div>
+                <div class="box text">
+                    <h3 class="box-title">Pedicure</h3>
+                    <span>
+                        Pedicure rigenerante per piedi felici e cura completa dei dettagli.
+                    </span>
+                </div>
+                <div class="box image scrub"></div>
+                <div class="box text">
+                    <h3 class="box-title">Trattamenti corpo</h3>
+                    <span>
+                        Trattamenti corpo per un benessere profondo e una nuova vitalità.
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section summary-section who-section">
+            <div class="row">
+                <div class="col-lg-6 col-md-7 col-sm-12">
+                    <div class="image"></div>
+                </div>
+                <div class="col-lg-6 col-md-5 col-sm-12">
+                    <div class="text-container">
+                        <h2 class="section-title">CHI SONO</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section times-section">
+            <div>
+                <h2 class="section-title text-center">ORARI</h2>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Lunedì</td>
+                            <td>08:30 – 19:00</td>
+                        </tr>
+                        <tr>
+                            <td>Martedì</td>
+                            <td>13:00 – 21:00</td>
+                        </tr>
+                        <tr>
+                            <td>Mercoledì</td>
+                            <td>08:30 – 19:00</td>
+                        </tr>
+                        <tr>
+                            <td>Giovedì</td>
+                            <td>08:30 – 12:30</br> 14:30 – 21:00</td>
+                        </tr>
+                        <tr>
+                            <td>Venerdì</td>
+                            <td>08:30 – 19:30</td>
+                        </tr>
+                        <tr>
+                            <td>Sabato</td>
+                            <td>08:30 – 12:30</td>
+                        </tr>
+                        <tr>
+                            <td>Domenica</td>
+                            <td>Chiuso</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="background"></div>
+            <div class="footer-content container">
+                <div class="company ">
+                    <h6>MAST DI CIRILLO MARIA</h6>
+                    <p>P.iva 0240234023042</p>
+                    <a class="link-item" href="https://goo.gl/maps/NxvaDMfNXnQae32o6" target="_blank">
+                        <img class="icon" src="./assets/icons/map.svg" alt="Facebook" />
+                        <span>Via Runces, 41, 33080 Roveredo in piano PN</span>
+                    </a>
+                </div>
+                <div class="contact ">
+                    <h6>CONTATTI</h6>
+                    <a class="link-item" href="https://api.whatsapp.com/send?l=it&phone=393312042571&text=Ciao,%20ho%20visto%20questo%20contenuto%20sul%20sito%20mastcentroestetico.it,%20vorrei%20avere%20maggiori%20informazioni%20a%20proposito%20di:" target="_blank">
+                        <img class="icon" src="./assets/icons/whatsapp.svg" alt="Facebook" />
+                        <span>+39 3937994192</span>
+                    </a>
+                    <a class="link-item" href="mailto:mastmariacirillo@gmail.com">
+                        <img class="icon" src="./assets/icons/email.svg" alt="Facebook" />
+                        <span>mastmariacirillo@gmail.com</span>
+                    </a>
+                </div>
+                <div class="social ">
+                    <h6>SOCIAL</h6>
+                    <a class="link-item" href="https://www.facebook.com/profile.php?id=100089093028849" target="_blank">
+                        <img class="icon" src="./assets/icons/facebook.svg" alt="Facebook" />
+                        <span>Facebook</span>
+                    </a>
+                    <a class="link-item" href="https://www.instagram.com/mast_centroestetico" target="_blank">
+                        <img class="icon" src="./assets/icons/instagram.svg" alt="Instagram" />
+                        <span>Instagram</span>
+                    </a>
+                </div>
+
+                <!-- <a href="https://api.whatsapp.com/send?l=it&phone=393312042571&text=Ciao,%20ho%20visto%20questo%20contenuto%20sul%20sito%20mastcentroestetico.it,%20vorrei%20avere%20maggiori%20informazioni%20a%20proposito%20di:">
+                    PROVA whatsapp
+                </a> -->
+            </div>
+        </div>
     </div>
+
 
 
 

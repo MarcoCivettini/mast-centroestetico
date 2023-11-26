@@ -1,16 +1,21 @@
+const setHeadrClass = (component) => {
+
+    if (window.scrollY >= window.innerHeight - 64) {
+        component.classList.add('high-contrast');
+    } else {
+        component.classList.remove('high-contrast');
+    }
+}
 const init = () => {
     const section2 = document.getElementById("header");
+    setHeadrClass(section2);
 
     window.addEventListener('scroll', (e) => {
-            if (window.scrollY >= window.innerHeight -64) {
-            section2.classList.add('high-contrast');
-        }else{
-            section2.classList.remove('high-contrast');
-        }
+        setHeadrClass(section2);
     })
 }
 
-window.onload = () => {init()};
+window.onload = () => { init() };
 
 
 
