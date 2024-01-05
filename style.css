@@ -95,14 +95,14 @@ letter-spacing: 0.07rem;
     letter-spacing: 1rem;
 }
 
-.title{
+.section1 .title{
     font-size: 7.5rem;
     font-weight: 800;
     margin-bottom: 0;
     letter-spacing: 2rem;
 }
 
-.title-descrition{
+.section1 .title-descrition{
     padding: 0 2rem;
     position: absolute;
     color: white;
@@ -129,6 +129,7 @@ letter-spacing: 0.07rem;
     position: absolute;
     bottom: 10%;
     left: 50%;
+    transform: translateX(-50%);
 }
 
 .scroll-info>.shape-border{
@@ -169,7 +170,8 @@ letter-spacing: 0.07rem;
     padding-top: 7rem;
 
 }
-.page-content .section-title{
+
+.section-title{
     font-size: 3rem;
     letter-spacing: .4rem;
     margin-bottom: 2rem;
@@ -177,61 +179,64 @@ letter-spacing: 0.07rem;
 
 .trattaments-preview-section{
     margin-top: 5rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 7rem;
     background-color:  #deeddb;
 }
 
-.grid-content{
+.trattaments-preview-section .section-title{
+    margin-bottom: 3.5rem;
+}
+
+.service-card{
     display: flex;
-    flex-wrap: wrap;
-    margin: 0rem 4rem;
-    justify-content: center;
-}
-.grid-content>.box{
-    border-right:2px solid whitesmoke;
-    border-bottom:2px solid whitesmoke;
+    width: 100%;
+    border-radius: 1rem;
+    background: var(--primary-text-color);
+    margin-bottom: 2.5rem;
+    height: 315px;
+    }
 
-    flex: 1 1 25%;
-    width: 200px;
-    min-width: 150px;
-    height: 250px;
-}
-
-.box.image{
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.box.image.manicure{
-    background-image: url("/assets/img/manicure.jpg");
-}
-.box.image.pedicure{
-    background-image: url("/assets/img/pedicure.jpg");
-}
-.box.image.massaggio{
-    background-image: url("/assets/img/massaggio.jpg");
-}
-.box.image.scrub{
-    background-image: url("/assets/img/scrub.jpg");
-}
-
-.box.text{
-    padding: 1rem 1rem;
+.service-card .text{
+    color: white;
+    margin: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    background: var(--primary-text-color);
+ }
+
+ .service-card .text .title{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.3rem;
+
+ }
+
+ .service-card .image{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.8rem 0 0 0.8rem;
+    min-width: 50%;
 }
-.box>.box-title{
-    margin-bottom: 1.7rem;
-    font-weight: 500;
-    font-size: 2rem;
+
+.service-card .image.massaggio{
+    background-image: url("/assets/img/massaggio.jpg");
 }
+.service-card .image.manicure{
+    background-image: url("/assets/img/manicure.jpg");
+}
+.service-card .image.pedicure{
+    background-image: url("/assets/img/pedicure.jpg");
+}
+.service-card .image.scrub{
+    background-image: url("/assets/img/scrub.jpg");
+}
+
+/*
+END TEST NEW CARD
+*/
+
 
 .summary-section{
     margin-top: 70px;
@@ -299,13 +304,65 @@ letter-spacing: 0.07rem;
 }
 
 
-.who-section .image{
-    background-image: url(./assets/img/img-section3.jpeg);
+.who-image-container{
+    position: relative;
+    width: 100%;
+    height: 421px;
+}
+
+.who-image-container .test{
+    height: 412px;
     width: 300px;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.who-image-container .bg{
+    width: 100%;
     height: 100%;
+    position: absolute;
+    background-image: url(./assets/img/wall-creeper.jpg);
+    background-size: 360px;
+    background-repeat: repeat;
+    filter: contrast(1) brightness(0.8) opacity(1) blur(1px);
+    border-radius: 2rem;
+}
+
+.who-image-container .image{
+    background-image: url(./assets/img/maria.png);
+    height: 100%;
+    width: 97%;
     background-size: contain;
     background-repeat: no-repeat;
-    
+    z-index: 2;
+    right: 6px;
+    position: absolute;
+    bottom: -11px;
+    border-radius: 54px;
+}
+
+.who-image-container .square{
+    width: 150px;
+    height: 150px;
+    background: rgba(223,236,219,1);
+    position: absolute;
+    left: 0;
+    top: 300px;
+    border-radius: 2rem;
+    transform: translateY(50%);
+
+}
+
+.who-image-container .square.top-right-square{
+    left: 100%;
+    top: 50px;
+    width: 225px;
+    height: 225px;
+    outline: 4px solid #698f5e;
+    border: 6px solid white;
+    transform: translateX(-83%);
 }
 
 .times-section{
@@ -430,6 +487,18 @@ text-decoration: none;
         width: 287px;
         height: 415px;
     }
+
+    .service-card{
+        flex-direction: column;
+        height: 450px;
+    }
+    .service-card .image{
+        height: 200px;
+        border-radius: 0.8rem 0.8rem 0 0rem;
+    }
+    .service-card .text{
+        margin: auto 2rem;
+    }
 }
 
 /* TABLET */
@@ -443,8 +512,8 @@ text-decoration: none;
         margin-top: 1rem;
         padding: 0;
     }
-    .summary-section .text-container h2{
-        font-size: 2.2rem;
+    .section-title{
+        font-size: 2.3rem;
         letter-spacing: 0.3;
     }
     .product-section .row{
