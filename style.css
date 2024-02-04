@@ -4,6 +4,10 @@
     --background-secondary: #f3f2f6;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 html,body, *{
 margin: 0;
 padding: 0;
@@ -76,16 +80,37 @@ letter-spacing: 0.07rem;
     height: 100%;
 
 }
-
-.base-btn{
-    background-color: var(--primary-text-color);
+.mt-btn{
     border: 0;
     border-radius: 0;
-    text-align: center;
     padding: 0.775rem 0.85rem;
-    font-size: 1rem;
-    color: var(--secondary-text-color);
+    max-width: 350px;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    text-align: center;
     letter-spacing: .2rem;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.mt-btn.mt-btn-primary{
+    background-color: var(--primary-text-color);
+    color: var(--secondary-text-color);
+}
+.mt-btn.mt-btn-primary:active{
+    filter: brightness(0.7);
+}
+
+.mt-btn.mt-btn-ghost{
+    background-color: transparent;
+    color: var(--primary-text-color);
+    border-bottom: 1px solid var(--primary-text-color);
+    border-top: 1px solid var(--primary-text-color);
+    border-radius: 0;
+}
+.mt-btn.mt-btn-ghost:active{
+    background-color: #efefef;
+    filter: brightness(1);
 }
 
 
@@ -180,7 +205,7 @@ letter-spacing: 0.07rem;
 .trattaments-preview-section{
     margin-top: 5rem;
     padding-top: 3.5rem;
-    padding-bottom: 7rem;
+    padding-bottom: 4rem;
     background-color:  #deeddb;
 }
 
@@ -192,13 +217,13 @@ letter-spacing: 0.07rem;
     display: flex;
     width: 100%;
     border-radius: 1rem;
-    background: var(--primary-text-color);
+    background: white;
     margin-bottom: 2.5rem;
     height: 315px;
     }
 
 .service-card .text{
-    color: white;
+    color: var(--primary-text-color);
     margin: 0 2rem;
     display: flex;
     flex-direction: column;
@@ -239,7 +264,7 @@ END TEST NEW CARD
 
 
 .summary-section{
-    margin-top: 70px;
+    margin-top: 4.3rem;
 }
 
 .summary-section .square-container{
