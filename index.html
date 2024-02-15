@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 
     <title>Mast - Centro Estetico</title>
     <meta name=author content="Marco Civettini">
@@ -23,18 +24,26 @@
 
 </head>
 
-<body>
+<body id="body">
     <div class="header" id="header">
-        <div class="logo"></div>
+        <a class="logo" href="#"></a>
         <div class="menu-links">
             <a class="item" href="#prenota">PRENOTA</a>
             <a class="item" href="#prodotti">PRODOTTI</a>
             <a class="item" href="#servizi" >SERVIZI</a>
             <a class="item" href="#orari">ORARI</a>
         </div>
+        <button id="burger-menu"></button>
     </div>
 
-    <section class="section1">
+    <div class="mobile-menu hide" id="mobile-menu">
+        <a class="item" href="#prenota">PRENOTA</a>
+        <a class="item" href="#prodotti">PRODOTTI</a>
+        <a class="item" href="#servizi">SERVIZI</a>
+        <a class="item" href="#orari">ORARI</a>
+    </div>
+
+    <section class="section1" id="home-section">
         <div class="background"></div>
         <div class="title-descrition">
             <h1 class="title">MAST</h1>
@@ -51,7 +60,7 @@
 
     <div class="page-content container-fluid">
 
-        <section class="section summary-section relax-section" id="prenota">
+        <section class="section summary-section relax-section" >
             <div class="row">
                 <div class="col-lg-6 col-md-7 col-sm-12">
                     <div class="square-container">
@@ -63,13 +72,14 @@
                 <div class="col-lg-6 col-md-5 col-sm-12">
                     <div class="text-container">
                         <h2 class="section-title">BENESSERE</h2>
-                        <p>
+                        <p id="prenota">
+                            Benvenuti nel nostro santuario del benessere, dove
+                            la bellezza e il relax si uniscono in armonia.<br>
                             Scopri il piacere dei massaggi rilassanti e dei trattamenti di estetica di base,
-                            accompagnati da prodotti di alta qualità. Benvenuti nel nostro santuario del benessere, dove
-                            la bellezza e il relax si uniscono in armonia.
+                            accompagnati da prodotti di alta qualità.
                         </p>
                         <a class="mt-btn mt-btn-primary mt-5 mb-4" href="https://api.whatsapp.com/send?l=it&phone=393312042571&text=Ciao,%20ho%20visto%20questo%20contenuto%20sul%20sito%20mastcentroestetico.it,%20vorrei%20avere%20maggiori%20informazioni%20a%20proposito%20di:"
-                        target="_blank">PRENOTA</a>
+                        target="_blank" >PRENOTA</a>
                     </div>
                 </div>
             </div>
