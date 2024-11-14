@@ -176,8 +176,7 @@ letter-spacing: 0.07rem;
     padding: 0 2rem;
     position: absolute;
     color: white;
-    align-self: center ;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -187,19 +186,15 @@ letter-spacing: 0.07rem;
 }
 
 
-.title-descrition>.slogan{
-    font-size: 1.3rem;
-    letter-spacing: .1rem;
-    margin-bottom: 3rem;
-}
-
-
 /* SCROLL INFO */
 .scroll-info{
     position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padd-bottom: 10vh;
+
 }
 
 .scroll-info>.shape-border{
@@ -208,6 +203,8 @@ letter-spacing: 0.07rem;
     border: 2px solid white;
     border-radius: 14px;
     position: relative;
+    align-self: end;
+    margin-bottom: 100px;
 }
 
 @keyframes test {
@@ -539,7 +536,7 @@ text-decoration: none;
     }
 
     .section1>.background{
-        background-size: 200px;
+        background-size: 230px;
     
     }
 

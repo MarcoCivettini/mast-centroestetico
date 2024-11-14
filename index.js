@@ -8,7 +8,7 @@ const setHeadrClass = (component, home) => {
     }
 }
 
-const toogleHomeVisible = (home) =>{
+const toogleHomeVisible = (home) => {
     if (window.scrollY >= window.innerHeight + 100) {
         home.classList.add('hide');
     } else {
@@ -36,6 +36,7 @@ const init = () => {
     const burgerMenu = document.getElementById('burger-menu');
     const headerLinks = document.getElementById('header');
     const mobileLinks = document.getElementById('mobile-menu');
+    const logo = document.getElementById('logo');
     const home = document.getElementById('home-section');
     setHeadrClass(headerLinks, home);
     toogleHomeVisible(home);
@@ -47,7 +48,7 @@ const init = () => {
 
     mobileLinks.addEventListener('click', (e) => {
         const isLink = e.target.classList.contains('item');
-        if(isLink){
+        if (isLink) {
             closeMobileMenu(mobileLinks, headerLinks)
             setHeadrClass(headerLinks, home);
             toogleHomeVisible(home);
@@ -63,6 +64,12 @@ const init = () => {
             openMobileMenu(mobileLinks, headerLinks);
         }
 
+    });
+
+    logo.addEventListener('click', () => {
+        closeMobileMenu(mobileLinks, headerLinks)
+        setHeadrClass(headerLinks, home);
+        toogleHomeVisible(home);
     });
 }
 
